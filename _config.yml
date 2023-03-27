@@ -23,7 +23,7 @@ name                     : "yjmd2222"
 description              : "코딩 블로그"
 url                      : "https://yjmd2222.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "/yjmd2222/yjmd2222.github.io"
+repository               : "yjmd2222/yjmd2222.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/profile_image.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
