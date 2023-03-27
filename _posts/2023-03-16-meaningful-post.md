@@ -3,9 +3,10 @@ title:  "github.io test"
 excerpt: "GitHub Blog 서비스인 github.io 블로그 시작하기로 했다."
 
 categories:
-  - Blog
+  - test_cat
 tags:
-  - Blog
+  - test_tag
+  - test_tag2
 last_modified_at: 2023-03-16T19:15:00-09:00
 ---
 
