@@ -50,6 +50,8 @@ comments:
     discussion_term      : "pathname"
     reactions_enabled    : 1
     theme                : "light"
+    input_position       : "top"
+    loading              : "lazy"
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -183,6 +185,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - "*.backup"
 keep_files:
   - .git
   - .svn
