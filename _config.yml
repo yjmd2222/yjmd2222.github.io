@@ -158,6 +158,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  # - _coding-story
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -293,3 +294,20 @@ defaults:
       comments: true
       share: true
       related: true
+  # # _coding-story
+  # - scope:
+  #     path: ""
+  #     type: coding-story
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true
+  #     share: true
+  #     related: true
+
+# # Collections
+# collections:
+#   coding-story:
+#     output: true
+#     permalink: /:collection/:path/
