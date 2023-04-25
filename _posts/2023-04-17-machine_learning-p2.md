@@ -2,7 +2,7 @@
 title:  "AIB Section 2 머신러닝 Part 2"
 excerpt: "지난 한 달 동안 배운 머신러닝 라이브러리"
 header:
-  teaser: /assets/images/s2ml00-machine-learning.png
+  teaser: /assets/images/s2ml00-machine-learning-robot.png
 categories:
   - AIB_Section_2
 tags:
@@ -14,7 +14,7 @@ last_modified_at: 2023-04-17T15:00:00-09:00
 ---
 
 <p align="center">
-  <img src="/assets/images/s2ml00-machine-learning.png" />
+  <img src="/assets/images/s2ml00-machine-learning-robot.png" />
 </p>
 
 [Section 2 머신러닝 Part 1](/{% for subcategory in page.categories %}{{subcategory}}{% endfor %}/machine-learning-p1)에서 Section 2에서 배운 개념 내용을 정리했다. 이 글에서는 사용한 함수들을 목록으로 나열해보겠다. 지금은 목록으로만 작성하지만 다음 번에는 매일 배운 내용 정리해야겠다.

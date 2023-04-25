@@ -2,7 +2,7 @@
 title:  "AIB 딥러닝 311 인공신경망 인트로"
 excerpt: "딥러닝 시작. 딥러닝의 기본 구조를 알아보자."
 header:
-  teaser: /assets/images/s3dl11-deep-learning.png
+  teaser: /assets/images/s3dl11-deep-learning-robot.png
 categories: [AIB_Section_3]
 tags: [AIB, 딥러닝, deep_learning, neural_network]
 date: 2023-04-18 19:00
@@ -10,7 +10,7 @@ last_modified_at: 2023-04-18T19:00:00-09:00
 ---
 
 <p align="center">
-  <img src="/assets/images/s3dl11-deep-learning.png" />
+  <img src="/assets/images/s3dl11-deep-learning-robot.png" />
 </p>
 
 적은 개수의 알고리즘으로 소수의 단계를 거쳐 회귀/분류 문제를 풀어낸 것이 머신러닝이었다면 아주 많은 단계를 거쳐 답을 도출해내는 것이 딥러닝이다. 대충 말해서 그렇고, 세부 구조를 살펴보면 다를 것이다.
