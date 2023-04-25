@@ -2,7 +2,7 @@
 title:  "AIB Section 2 머신러닝 Part 1"
 excerpt: "지난 한 달 동안 머신러닝에 대해 배웠다. 배운 내용을 복기하면서 정리해보도록 하겠다."
 header:
-  teaser: /assets/images/s2ml00-machine-learning.png
+  teaser: /assets/images/s2ml00-machine-learning-robot.png
 categories:
   - AIB_Section_2
 tags:
@@ -14,7 +14,7 @@ last_modified_at: 2023-04-15T00:31:00-09:00
 ---
 
 <p align="center">
-  <img src="/assets/images/s2ml00-machine-learning.png" />
+  <img src="/assets/images/s2ml00-machine-learning-robot.png" />
 </p>
 
 지난 한 달 동안 머신러닝에 대해 배웠다. 배운 내용을 복기하면서 정리해보도록 하겠다. 우선 지금 든 생각인데, 매일 배운 내용을 하나의 포스트로 기록하는 것이 좋을 것 같지만, 이미 지나갔으므로 정리하고 싶은 만큼 정리해보기.
