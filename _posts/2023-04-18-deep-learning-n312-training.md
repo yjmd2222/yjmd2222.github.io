@@ -4,7 +4,7 @@ excerpt: "인공신경망 학습의 기본 요소들에 대해 배웠다"
 header:
   teaser: /assets/images/pizza.webp
 categories: [AIB_Section_3]
-tags: [AIB, 딥러닝, deep_learning, neural_network, 'gradient_descent']
+tags: [AIB, 딥러닝, deep_learning, neural_network, gradient_descent]
 date: 2023-04-18 19:00
 last_modified_at: 2023-04-18T19:00:00-09:00
 ---

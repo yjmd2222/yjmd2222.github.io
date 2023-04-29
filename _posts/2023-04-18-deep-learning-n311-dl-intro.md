@@ -48,7 +48,7 @@ def my_dl(nodes_in_layers, activation_funcs, epochs=5):
   # input = tf.keras.layers.input(shape=(69,))
   # hidden = tf.keras.layers.Dense(50, activation='relu')(input)
   # output = tf.keras.layers.Dense(1, activation='sigmoid')(hidden)
-  # model = tf.keras.models.Model(inputs=input, outputs=put)
+  # model = tf.keras.models.Model(inputs=input, outputs=output)
 
   # 모델 컴파일
   model.compile(
