@@ -4,7 +4,7 @@ excerpt: "인공신경망의 성능을 더욱 높이기 위한 방법들을 알�
 header:
   teaser: /assets/images/s3dl13-deep-learning.png
 categories: [AIB_Section_3]
-tags: [AIB, 딥러닝, deep_learning, neural_network, 'gradient_descent', 'hyperparameter_tuning']
+tags: [AIB, 딥러닝, deep_learning, neural_network, gradient_descent, hyperparameter_tuning]
 date: 2023-04-24 19:00
 last_modified_at: 2023-04-24T19:00:00-09:00
 ---
