@@ -1,6 +1,6 @@
 ---
 title:  "AIB 딥러닝 323 언어모델, Recurrent Neural Network"
-excerpt: "토큰을 임베딩해보기"
+excerpt: "가로 출력에 더한 세로 순환"
 header:
   teaser: /assets/images/s3dl23-lstm2.jpg
 categories: [AIB_Section_3]
