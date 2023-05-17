@@ -8,7 +8,7 @@ tags: [AIB, 딥러닝, deep_learning, convolutional_neural_network, transfer_lea
 date: 2023-05-02 20:00
 last_modified_at: 2023-05-02T20:00:00-09:00
 ---
-
+$ \require{enclose} $
 합성곱 신경망(Convolutional Neural Network)는 이미징 분석에서 2차원의 그림의 정보를 잘 담아낸다. 그림을 조각내서 1차원으로 이어붙이는 `Flatten`은 공간의 특성을 살리지 못하는데, CNN은 가능하다.
 
 CNN에서 층은 Convolution layer와 pooling layer가 있고, 결과를 낼 때 차원을 축소하는 방식으로 `GlogalAveragePooling2d`도 있다.
@@ -34,12 +34,12 @@ pooling은 가중치 연산이 없고, 축소시킬 때 채널을 축소시키�
 
 여기까지 매우 간단하게 과정을 적어보았는데, 세부적으로 몇 개의 커널로 몇 개의 채널을 만드는지 등은 매우 헷갈린다. 다시 정리해보자.
 
-- convolution layer에서 filter로 feature map을 만든다. 몇 개의 feature map이 만들어지는가? $ \rm{num \  channels} \times \rm{num \  filters} $.
+- convolution layer에서 filter로 feature map을 만든다. 몇 개의 feature map이 만들어지는가? $ \enclose{horizontalstrike}{\rm{num \  channels} \times \rm{num \  filters}} $. 채널 개수 만큼. 참 헷갈린다.
 - convolution layer에 채널이 세 개 있다. output에 커널 개수에 영향을 주는가? 전혀 다른 문제다. output 커널 개수는 내가 정해준다.
 - 가중치는 몇 개인가? $ \rm{size \  filter \times num \  features \times num \ channels} $
 - 어떻게 feature map이 output 커널로 mapping되는가? 하나의 feature map은 입력 채널마다 *동일한 가중치*로 계산된 matrix를 더해주어 만든다.
 - 방금 전은 일반적인 (standard) convolution이다. depthwise convolution은 각각의 채널에 대해 feature map을 보유한다.
-- $ x \times y $에 대해서가 아니라 $ z $에 해당하는 채널들에 대해 convolution을 진행할 수 있다. $ 1 \times 1 times c $로 map에 수직한 방향에서 바라보면 1 개만 고르는데, 모든 채널들에 대해 골라서 하나로 압축시켜 채널 수를 감소시킬 수 있다. 이를 pointwise convolution이라 부른다.
+- $ x \times y $에 대해서가 아니라 $ z $에 해당하는 채널들에 대해 convolution을 진행할 수 있다. $ 1 \times 1 \times c $로 map에 수직한 방향에서 바라보면 1 개만 고르는데, 모든 채널들에 대해 골라서 하나로 압축시켜 채널 수를 감소시킬 수 있다. 이를 pointwise convolution이라 부른다.
 - depthwise separable convolution은 depthwise convolution 다음 pointwise convolution을 진행한 것이라 볼 수 있다. filter size를 동일하게 설정한다면 결과적으로는 standard convolution과 동일한 형태를 가질 수 있다. 그런데 차원을 축소했다가 키우기 때문에 연산량이 훨씬 적다.
 
 `Flatten` 대신 `GlobalAveragePooling2d`를 사용할 수 있다. 마찬가지로 채널 당 하나의 값으로 축소시키기 때문에 연산량이 엄청 줄어든다.
