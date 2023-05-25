@@ -1,6 +1,6 @@
 ---
 title:  "AIB 섹션 4 스프린트 1 랩업"
-excerpt: 
+excerpt: "배운 내용 정리"
 header:
   # teaser:
 categories: [AIB_Section_4]
@@ -30,8 +30,8 @@ last_modified_at: 2023-05-25T10:00:00-09:00
 - [x] 3층 스키마 (보는 관점)
 - [x] 함수 종속, 정규화, 키 종류 (슈퍼, 후보, 기본, 대체, 외래)
 - [ ] DB 옵티마이저
-- [ ] DB 인덱스
-- [ ] csv 다루기
+- [x] DB 인덱스
+- [x] csv 다루기
 - [ ] B-TREE 자료 구조
 
 ## 3층 스키마
@@ -114,3 +114,39 @@ key에 대해서 좀 정리 할 필요가 있을 것 같다.
 - https://rebro.kr/160
 - https://jerryjerryjerry.tistory.com/49
 - https://rachel921.tistory.com/29
+
+## Database Optimizer
+쿼리문을 실행할 때 어떻게 하면 효율적으로 실행할 수 있을지에 대한 계획을 세우는 엔진. 계획별 비용을 비교해서 최고 효율의 계획에 따라 쿼리를 수행한다. 크게 규칙 기반과 비용 기반으로 옵티마이저로 나눌 수 있다고 한다.
+- https://coding-factory.tistory.com/743
+
+## DB index
+데이터베이스 내 테이블 검색속도를 향상하기 위한 자료 구조. 인덱스를 사용하지 않는다면 조회하기 위해 전체를 테이블을 탐색해야 한다. 인덱스를 활용한다면 다음의 추가 작업이 있다.
+- INSERT: 새로운 데이터에 인덱스 추가
+- DELETE: 삭제할 데이터의 인덱스 사용 안 할 것
+- UPDATE: DELETE then INSERT의 개념
+
+그런데 꼭 장점만 있는 것은 아니다. 인덱스를 관리하기 위한 공간도 필요하고, 관리를 위한 작업이 있어야 한다. 또 잘못 설정한다면 성능이 떨어질 수 있다.
+
+```sql
+CREATE INDEX my_index ON my_table(my_id)
+```
+
+## CSV 사용
+이제까지 사용해보았던 `pandas`를 그대로 사용할 수도 있겠고, `import csv`를 해볼수도 있다. `csv` 모듈이 더 빠르다고 함.
+
+[Documentation](https://docs.python.org/3/library/csv.html)을 보면 잘 나와있다.
+
+과제 중에 csv 파일을 db 테이블로 가져오는 것이 있었는데 제출할 때는 pandas를 이용했었다. 이를 csv로 적어보자면 다음과 같이 할 수 있을 것이다.
+
+```python
+# conn
+cur = conn.cursor()
+sql_insert_csv = f'''
+INSERT INTO passenger VALUES {str(tuple([r'%s']*9)).replace("'", '')}
+'''
+
+import csv
+with open ('example.csv', newline='') as file:
+	reader = csv.reader(file, delimiter=',')
+	for idx, row in enumerate(reader): cur.execute(sql_insert_csv, (idx, *row))
+```
