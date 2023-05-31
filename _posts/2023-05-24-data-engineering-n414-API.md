@@ -1,5 +1,5 @@
 ---
-title:  "AIB Application Programming Interface (+알고리즘)"
+title:  "AIB 데이터 엔지니어링 414 Application Programming Interface (+알고리즘)"
 excerpt: "API"
 header:
   # teaser:

@@ -1,5 +1,5 @@
 ---
-title:  "AIB 섹션 4 스프린트 1 랩업"
+title:  "AIB 데이터 엔지니어링 스프린트 1 랩업"
 excerpt: "배운 내용 정리"
 header:
   # teaser:
