@@ -1,5 +1,5 @@
 ---
-title:  "AIB 데이터 엔지니어링"
+title:  "AIB 데이터 엔지니어링 411 Start"
 excerpt: "개발 환경 구축 시작"
 header:
   # teaser:

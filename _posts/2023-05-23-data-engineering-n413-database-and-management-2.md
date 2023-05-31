@@ -1,5 +1,5 @@
 ---
-title:  "AIB SQL-2"
+title:  "AIB 데이터 엔지니어링 413 SQL-2"
 excerpt:
 header:
   # teaser:
