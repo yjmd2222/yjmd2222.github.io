@@ -85,15 +85,15 @@ breakpoint()
 
 wrapper function을 정의하고 그 function을 `@wrapper`로 내부 함수 윗줄에 입력하면 적용된다. 그런데 함수마다 인자가 다를 수 있고, wrapper를 그 함수마다 다르게 정의하기는 힘들다. 그래서 args and kwargs를 이용한다.
 ```python
-def wrapper(func):
-  def to_do(*args, **kwargs):
+def decorator(func):
+  def wrapper(*args, **kwargs):
     do_something_1()
     func(*args, **kwargs)
     do_something_2()
   
   return to_do
 
-@wrapper
+@decorator
 def my_func(something):
   print(something)
 ```

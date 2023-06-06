@@ -146,15 +146,59 @@ cat_el.text # 문자열. str의 method 적용 가능
 - [x] 정적/동적 스크레이핑
 - [ ] 스크레이핑 결과 데이터베이스에 적재
 - [ ] 콘솔에서 추출할 데이터 패턴 출력해보기
-- [ ] 셀레니움
+- [x] 셀레니움
 - [ ] 정규식 활용하여 문자열 찾기
 - [ ] 클래스, 함수, 데코레이터 적용해서 코드 짜보기
 
 ## 정적/동적 스크레이핑
 고정되어 있어서 소스가 변하지 않는 페이지는 정적 페이지. 무언가를 클릭한다면 url이 변하고 내용이 바뀐다. 동적페이지는 페이지 내에서 어떤 것을 수행하면 내용 내에서 무언가가 실행/바뀐다.
 
-# 셀리니움
-마우스나 키보드와 같은 행동. 검색 등 동적 정보 가져오기.
+## 셀리니움
+마우스나 키보드와 같은 행동. 검색 등 동적 정보 가져오기. 드라이버 오브젝트를 선언하고 이 오브젝트로 어떤 동작을 수행하고 결과를 받아올지를 정할 수 있다.
+
+```python
+from selenium import webdriver # 드라이버
+from selenium.webdriver.chrome.service import Service # manager configuration
+from webdriver_manager.chrome import ChromeDriverManager # 자동 드라이버 로드
+from selenium.webdriver.common.by import By # find element by which type
+
+import time # wait
+
+import sqlite3
+
+# 드라이버 오브젝트 선언
+auto_driver = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=auto_driver)
+
+driver.set_window_size(1920, 1080)
+driver.get('https://example.url.probably.wont.connect')
+time.sleep(3) # 로딩 타임 기다리기 및 과부하 방지
+
+query = '검색할 내용'
+query_bar = driver.find_element(By.CLASS_NAME, 'input')
+query_bar.send_keys(query)
+time.sleep(3)
+
+enter = driver.find_element(By.XPATH, '/html/body/my/full/xpath')
+enter.click()
+time.sleep(3)
+
+query_result = driver.find_element(By.WHICHEVERIDENTIFIER, 'whatever')
+
+conn = sqlite3.connect('store_scraping_result.db')
+cur = conn.cursor()
+
+def rest_of_db_storing():
+  '결과 보고 형식 맞추어서 저장. 추후 다룰 NoSQL로 하면 sqlite보다 저장하기 편함'
+  pass
+
+cur.execute(rest_of_db_storing())
+
+cur.close()
+conn.close()
+
+driver.quit()
+```
 
 ### 참고자료
 - https://available-stem-0cc.notion.site/CodeStates-b64f0788d8cf4151ab12f9e0dbd314d8
