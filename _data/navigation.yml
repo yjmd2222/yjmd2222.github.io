@@ -8,7 +8,7 @@ main:
   #   url: /coding-story/
   - title: "Categories"
     url: /categories/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "유용할지 모르는 링크들"
+    url: /look-ups/
   # - title: "Sitemap"
   #   url: /sitemap/
