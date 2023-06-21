@@ -1,10 +1,10 @@
 ---
-title:  "AIB 데이터 엔지니어링 섹션 4 스프린트 3 랩업"
+title:  "AIB 데이터 엔지니어링 섹션 4 스프린트 3 랩업, 프로젝트 인트로"
 excerpt:
 header:
   # teaser:
 categories: [AIB_Section_4]
-tags: [AIB, data_engineering]
+tags: [AIB, data_engineering, project]
 date: 2023-06-13 09:00
 last_modified_at: 2023-06-13T09:00:00-09:00
 ---
