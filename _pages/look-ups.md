@@ -4,6 +4,7 @@ permalink: /look-ups/
 layout: single
 ---
 
+# 링크
 - [보고서에 코드 삽입](https://carbon.now.sh/)
 - [HTML intro](http://www.tcpschool.com/html/intro)
 - [FLASK walkthrough](https://wikidocs.net/81048)
@@ -22,3 +23,6 @@ layout: single
 - [웹페이지 디자인](https://dribbble.com/)
 - [셀레니움 다양한 기능](https://chaelist.github.io/docs/webscraping/selenium/)
 - [피피티 템플릿](https://www.canva.com/ko_kr/)
+
+# 커맨드
+- git history에서 해당 내용 삭제하고 싶을 때: `git filter-branch --force --index-filter "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA" --prune-empty --tag-name-filter cat -- --all`
