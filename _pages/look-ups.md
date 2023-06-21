@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "유용할지 모르는 자료들"
 permalink: /look-ups/
 layout: single
 ---
