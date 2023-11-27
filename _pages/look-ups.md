@@ -69,7 +69,7 @@ layout: single
 - git history에서 해당 내용 삭제하고 싶을 때: `git filter-branch --force --index-filter "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-SENSITIVE-DATA" --prune-empty --tag-name-filter cat -- --all`
 - git ssh 설정 관련
     - [SSH 키 새로 생성](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-    - [최초 한 번 입력 후 다시 passphrase 입력 안 하기](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
+    - [SSH 공개 키 깃허브에 추가](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ## misc
 최신 논문은 모두 다 읽어볼 수는 없음. 그래서 괜찮은 뉴스레터 구독하면 정기적으로 최신 정보 받는 것도 좋은 방법. 예: 그래프 오마카세
