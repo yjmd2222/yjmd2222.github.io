@@ -52,6 +52,7 @@ layout: single
 - [독취사](https://cafe.naver.com/dokchi) 이공계
 - [연준님 17기 블로그](https://leeyeonjun85.github.io/aib%20log/AIB_TP1/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-4%EC%9D%BC%EC%B0%A818-%EB%AA%A9--%EB%A0%88%EA%B1%B0%EC%8B%9C-%EB%AA%A8%EB%8D%B8-%EB%B6%84%EC%84%9D-%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%A7%81)
 - [진재님 객체탐지](https://github.com/jjlee93/ColdEyes-Project)
+- [numpy.datetime object to datetime.datetime object](https://gist.github.com/blaylockbk/1677b446bc741ee2db3e943ab7e4cabd?permalink_comment_id=3775327)
 
 ## 책
 - 비전공자도 이해할 수 있는 AI 지식
